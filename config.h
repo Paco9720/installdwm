@@ -40,7 +40,7 @@ static const char col_gray1[] = "#222222";
 static const char col_gray2[] = "#444444";
 static const char col_gray3[] = "#bbbbbb";
 static const char col_gray4[] = "#eeeeee";
-static const char col_cyan[]  = "#000000";
+static const char col_cyan[]  = "#303030";
 
 static const char *colors[][3] = {
 	[SchemeNorm] = {
@@ -148,8 +148,8 @@ static Key keys[] = {
 	{ MODKEY, XK_Down, setmfact, {.f = -0.05} },
 
 	/* tag anterior / siguiente */
-	{ MODKEY|Mod1Mask, XK_Left, viewprevtag, {0} },
-	{ MODKEY|Mod1Mask, XK_Right, viewnexttag, {0} },
+	{ MODKEY|Mod1Mask, XK_Right, viewprevtag, {0} },
+	{ MODKEY|Mod1Mask, XK_Left, viewnexttag, {0} },
 
 	/* layouts */
 	{ MODKEY, XK_t, setlayout, {.v = &layouts[0]} },
